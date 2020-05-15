@@ -1,0 +1,31 @@
+#newsletter.toast {
+    max-width: 100%;
+    color: var(--color-white);
+    background-color: rgba(0, 123, 193, 0.7);
+    transform: translateY(100%);
+    transition: all 500ms ease-in-out;
+}
+
+#newsletter.toast.show {
+    transform: translateY(0%);
+    transition-delay: 100ms;
+}
+
+#newsletter.toast h4 {
+    font-weight: 600;
+}
+
+#newsletter.toast .btn-primary {
+    border: 0;
+    background-color: var(--color-orange);
+    margin-left: 10px;
+}
+
+#newsletter.toast .btn-primary:hover {
+    background-color: var(--color-dark-orange);
+}
+
+#newsletter.toast .close {
+    color: var(--color-white);
+    opacity: 1;
+}

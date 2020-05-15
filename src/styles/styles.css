@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --color-blue: rgba(0, 123, 193, 1);
+    --color-dark-blue: rgba(0, 74, 177, 1);
+    --color-dark-blue-2: rgba(4, 3, 37, 1);
+    --color-orange: rgba(255, 128, 0, 1);
+    --color-dark-orange: rgba(204, 102, 0, 1);
+    --color-smoke-grey: rgba(229, 229, 229, 1);
+    --color-black: rgba(51, 66, 63, 1);
+    --color-white: rgba(255, 255, 255, 1);
+}
+
+html,
+body {
+    background-color: var(--color-smoke-grey);
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+@media only screen and (max-width: 740px) {
+    #cookie.alert .btn-primary {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,24 @@
+.hero-shot h3 {
+    font-weight: 600;
+}
+
+.hero-shot h4 {
+    font-weight: 300;
+}
+
+.hero-text {
+    color: var(--color-white);
+}
+
+.jumbotron {
+    background-image: linear-gradient(var(--color-blue), var(--color-blue)), url("./images/background/background-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.logo {
+    height: 10vh;
+    z-index: 2;
+}

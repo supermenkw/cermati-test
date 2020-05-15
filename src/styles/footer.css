@@ -1,0 +1,8 @@
+.footer-bg {
+    background-color: var(--color-dark-blue-2);
+    min-height: 15vh;
+}
+
+.footer-text {
+    color: var(--color-white);
+}
