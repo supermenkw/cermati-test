@@ -14,24 +14,42 @@ function main() {
         });
     }
 
-    const triggerToastNewsLetter = () => {
+    const hideToastNewsLetter = () => {
+
+    }
+
+    const triggerToastNewsLetter = (status) => {
         $(window).scroll(function () {
-            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            if ($(window).scrollTop() + $(window).height() == $(document).height() && status === 'enable') {
+                status = 'disable';
+
                 $('#newsletter').toast({
                     'animation': true,
                     'autohide': false
                 });
-                $('#newsletter').toast('show')
+                $('#newsletter').toast('show');
             }
         });
     }
 
     $(function () {
-        $("#cookie").alert();
-        $('#newsletter').toast('dispose');
-        fullWidthHero();
-        triggerToastNewsLetter();
+        const enable = 'enable';
+        const disable = 'disable';
+        let status = enable;
 
+        $("#cookie").alert();
+        fullWidthHero();
+
+        triggerToastNewsLetter(status);
+
+        $('.close-newsletter').click(function () {
+            $("#newsletter").toast('hide');
+            status = disable;
+            setTimeout(function () {
+                status = enable;
+                triggerToastNewsLetter(status);
+            }, 600000)
+        })
     })
 }
 
