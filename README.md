@@ -6,4 +6,4 @@ A simple portfolio page for front-end developer with Bootstrap 4.
 npm install
 ```
 # Preview
-![Hero Image Preview](https://photos.google.com/search/_tra_/photo/AF1QipMUO35qATqQaM1OeAEcj_Ftc7EMqhDw5T2v0f1u)
+![Hero Image Preview](https://github.com/supermenkw/portfolio-template/blob/master/dist/responsive-preview.jpg)
