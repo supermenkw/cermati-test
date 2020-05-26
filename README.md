@@ -8,6 +8,10 @@ A simple portfolio page for front-end developer with Bootstrap 4.
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install the used modules in this project.
+
 ## `npm run dev`
 
 Runs the webpage in the development mode.
